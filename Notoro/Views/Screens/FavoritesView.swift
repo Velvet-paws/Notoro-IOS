@@ -16,14 +16,9 @@ struct FavoritesView:View{
                 } label: {
                     TaskView(task: nTask)
                         .listRowSeparator(.hidden)
-                    
                 }
-                
                 .buttonStyle(PlainButtonStyle())
                 .listRowSeparator(.hidden)
-                
-                
-                
             }
             .onDelete { indexSet in
                 taskList.deleteTask(offset: indexSet)
